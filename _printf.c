@@ -1,3 +1,11 @@
+#include "main.h"
+#include <stdlib.h>
+/**
+ * _printf - prints different format.
+ * @format: format specifier
+ *
+ * Return: int
+ */
 int _printf(const char *format, ...)
 {
 	int i = 0, j = 0;
