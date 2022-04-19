@@ -15,6 +15,7 @@ int (*explore_req(const char *format))(va_list)
 		{"s", print_s},
 		{"i", print_i},
 		{"d", print_d},
+		{"b", print_bi},
 		{NULL, NULL}
 	};
 
@@ -57,7 +58,7 @@ int _printf(const char *format, ...)
 			i += 2;
 			continue;
 		}
-		if (!format[i])
+		if (!format[i] + 1)
 			return (-1);
 		_putchar(format[i]);
 		count++;
