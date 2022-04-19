@@ -18,6 +18,10 @@ int (*explore_req(const char *format))(va_list)
 		{"r", print_rev},
 		{"u", print_unsig},
 		{"b", print_bin},
+		{"o", print_octal},
+		{"x", print_x},
+		{"X", print_X},
+		{"R", print_rot13},
 		{NULL, NULL}
 	};
 
