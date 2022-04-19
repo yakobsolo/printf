@@ -15,6 +15,8 @@ int (*explore_req(const char *format))(va_list)
 		{"s", print_s},
 		{"i", print_i},
 		{"d", print_d},
+		{"r", print_rev},
+		{"u", print_unsig},
 		{"b", print_bin},
 		{NULL, NULL}
 	};
